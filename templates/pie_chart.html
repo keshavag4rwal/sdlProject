@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Pie Chart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Pie Chart</h1>
+        <form action="/pie_chart" method="post">
+            <input type="text" name="column" placeholder="Column (CW marks, SW marks, Attendance (%))" required>
+            <button type="submit">Generate Pie Chart</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

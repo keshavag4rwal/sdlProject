@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Extract Data</h1>
+        <form action="/extract" method="post">
+            <input type="text" name="start_id" placeholder="Start Enrollment ID" required>
+            <input type="text" name="end_id" placeholder="End Enrollment ID" required>
+            <button type="submit">Extract Data</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

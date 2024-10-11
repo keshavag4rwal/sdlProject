@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Modify Student</h1>
+        <form action="/modify" method="post">
+            <input type="text" name="enrollment_id" placeholder="Enrollment ID" required>
+            <input type="text" name="column" placeholder="Column (CW marks, SW marks, Attendance (%))" required>
+            <input type="number" name="new_value" placeholder="New Value" required>
+            <button type="submit">Modify Student</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

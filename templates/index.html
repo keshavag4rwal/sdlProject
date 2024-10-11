@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Student Data Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Data Management</h1>
+        <form action="/add" method="GET">
+            <input type="submit" value="Add Student">
+        </form>
+        <form action="/modify" method="GET">
+            <input type="submit" value="Modify Student">
+        </form>
+        <form action="/delete" method="GET">
+            <input type="submit" value="Delete Student">
+        </form>
+        <form action="/extract" method="GET">
+            <input type="submit" value="Extract Data">
+        </form>
+        <form action="/filter" method="GET">
+            <input type="submit" value="Filter Data">
+        </form>
+        <form action="/pie_chart" method="GET">
+            <input type="submit" value="Generate Pie Chart">
+        </form>
+        <form action="/display" method="GET">
+            <input type="submit" value="Display Data">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Student</h1>
+        <form action="/add" method="post">
+            <input type="text" name="enrollment_id" placeholder="Enrollment ID" required>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="number" name="cw_marks" placeholder="CW Marks" required>
+            <input type="number" name="sw_marks" placeholder="SW Marks" required>
+            <input type="number" name="attendance" placeholder="Attendance (%)" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

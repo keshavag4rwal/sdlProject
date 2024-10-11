@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Student</h1>
+        <form action="/delete" method="post">
+            <input type="text" name="enrollment_id" placeholder="Enrollment ID" required>
+            <button type="submit">Delete Student</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
