@@ -1,0 +1,156 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a smooth font and background color for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #495057;
+    line-height: 1.6;
+}
+
+/* Center the container and give it a fresh, minimal look */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for headings */
+h1, h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Add a gradient underline for headers */
+h1::after, h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    margin: 10px auto;
+    border-bottom: 3px solid #28a745;
+}
+
+/* Form styles with better padding and rounded inputs */
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Input fields: refined with padding and shadow */
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+    outline: none;
+}
+
+/* Submit button with gradient, and hover effect */
+input[type="submit"] {
+    background-image: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+    transform: translateY(-3px);
+}
+
+/* Table styling with zebra-striping and hover effects */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.table th, .table td {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f1f3f5;
+}
+
+.table tr:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+}
+
+/* Enhanced error and success messages */
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+    }
+}
